@@ -1,0 +1,4 @@
+#Tue Jun 19 08:36:44 ICT 2018
+base.0=/Users/admin/Desktop/React_Native/Training/Foody/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/admin/Desktop/React_Native/Training/Foody/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
