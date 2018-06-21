@@ -16,7 +16,7 @@ const RememberTabNavigator = TabNavigator({
     Address: {
         screen: RememberAddress,
         navigationOptions: {
-            title: 'Địa chỉ',
+            title: 'Địa điểm',
         }
     },
     Image: {
@@ -46,13 +46,15 @@ const RememberTabNavigator = TabNavigator({
             alignItems: 'center'
         },
         upperCaseLabel: false,
-        activeTintColor: 'blue',
+        activeTintColor: '#1f61cc',
         inactiveTintColor: 'black',
         labelStyle: {
-            fontSize: 12
+            fontSize: 13,
+            color: 'black'
         },
         indicatorStyle: {
-            backgroundColor: 'blue'
+            backgroundColor: '#1f61cc',
+            height: 3
         }
 
     },

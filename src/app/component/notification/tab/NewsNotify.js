@@ -23,14 +23,14 @@ export default class NewsNotify extends Component {
                     renderItem={({item}) => {
                         return (
                             <View>
+                                <View
+                                    style={{height: 0.5, backgroundColor: '#c3c3c3'}}/>
                                 <ItemView
                                     imageUrl={item.imageUrl}
                                     title={item.title}
                                     content={item.content}
                                     time={item.time}
                                 />
-                                <View
-                                    style={{height: 0.5, backgroundColor: 'gray'}}/>
                             </View>
                         )
                     }}
@@ -50,7 +50,7 @@ class ItemView extends Component {
                         resizeMode={'stretch'}
                         source={this.props.imageUrl}
                     />
-                    <View style={{marginLeft: 10, marginRight: 10, justifyContent: 'center', alignItems: 'center'}}>
+                    <View style={{marginLeft: 10, marginRight: 10, flex: 1}}>
                         <Text style={styles.titleItem}>{this.props.title}</Text>
                         <Text style={styles.contentItem}>{this.props.content}</Text>
                         <Text style={styles.timeItem}>{this.props.time}</Text>
@@ -62,11 +62,10 @@ class ItemView extends Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-    },
+    container: {},
     containerItem: {
         flexDirection: 'row',
-        padding: 10
+        padding: 10,
     },
     imgItem: {
         width: 80,
@@ -84,8 +83,7 @@ const styles = StyleSheet.create({
         marginBottom: 8
     },
     timeItem: {
-        color: '#c5c5c5',
-        fontSize: 11,
-        marginBottom: 10
+        color: '#b6b6b6',
+        fontSize: 12,
     }
 });

@@ -3,7 +3,8 @@ import {
     Text,
     View,
     Image,
-    StyleSheet
+    StyleSheet,
+    TouchableWithoutFeedback
 } from 'react-native';
 
 export default class RememberImage extends Component {
@@ -13,13 +14,18 @@ export default class RememberImage extends Component {
     }
 
     render() {
+
+        const rootNav = this.props.screenProps.rootNavigation;
+
         return (
             <View style={styles.container}>
-                <Image
-                    source={require('../../../../res/img/user_profile.png')}
-                    resizeMode={'stretch'}
-                    style={styles.image}
-                />
+                <TouchableWithoutFeedback onPress={() => rootNav.navigate('Login')}>
+                    <Image
+                        source={require('../../../../res/img/user_profile.png')}
+                        resizeMode={'stretch'}
+                        style={styles.image}
+                    />
+                </TouchableWithoutFeedback>
                 <Text>Bạn phải đăng nhập để xem</Text>
             </View>
         )

@@ -14,9 +14,12 @@ export default class MyNotify extends Component {
     }
 
     render() {
+
+        const rootNav = this.props.screenProps.notifyNav;
+
         return (
             <View style={styles.container}>
-                <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('Login')}>
+                <TouchableWithoutFeedback onPress={() => rootNav.navigate('Login')}>
                     <Image
                         source={require('../../../../res/img/user_profile.png')}
                         resizeMode={'stretch'}

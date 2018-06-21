@@ -44,7 +44,9 @@ export default class Notification extends Component {
                     right={this.renderRightToolbar()}
                     left={this.renderLeftToolbar()}
                 />
-                <NotifyTabNavigator/>
+                <NotifyTabNavigator
+                    screenProps={{notifyNav: this.props.navigation}}
+                />
             </View>
         )
     }

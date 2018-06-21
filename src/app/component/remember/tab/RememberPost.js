@@ -14,16 +14,13 @@ class RememberPost extends Component {
         super(props);
     }
 
-    goToLoginScreen = () => {
-        alert("GoTo Login Screen");
-
-        this.props.navigation.navigate('Login');
-    };
-
     render() {
+
+        const rootNav = this.props.screenProps.rootNavigation;
+
         return (
             <View style={styles.container}>
-                <TouchableWithoutFeedback onPress={this.goToLoginScreen}>
+                <TouchableWithoutFeedback onPress={() => rootNav.navigate('Login')}>
                     <Image
                         source={require('../../../../res/img/user_profile.png')}
                         style={styles.image}

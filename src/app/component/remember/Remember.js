@@ -35,7 +35,9 @@ export default class Remember extends Component {
         return (
             <View style={styles.container}>
                 <Toolbar center={this.renderCenterToolbar()} right={this.renderRightToolbar()}/>
-                <RememberTabNavigator/>
+                <RememberTabNavigator
+                    screenProps={{ rootNavigation: this.props.navigation }}
+                />
             </View>
         )
     }
