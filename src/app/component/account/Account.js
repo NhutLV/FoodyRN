@@ -69,14 +69,8 @@ export default class Account extends Component {
     renderHeaderList = () => {
         return (
             <View
-                style={{height: 5, backgroundColor: 'gray'}}
+                style={{height: 10, backgroundColor: '#aeaeae'}}
             />
-        )
-    };
-
-    renderFooterList = () => {
-        return (
-            <View/>
         )
     };
 
@@ -103,28 +97,33 @@ export default class Account extends Component {
                             source={require('../../../res/img/right-arrow.png')}/>
                     </View>
                 </TouchableWithoutFeedback>
-                <FlatList
-                    data={firstData}
-                    renderItem={this.renderItem}
-                    ItemSeparatorComponent={this.renderSeparatorComponent}
-                    ListHeaderComponent={this.renderHeaderList}
-                    ListFooterComponent={this.renderFooterList}
-                />
-                <FlatList
-                    data={secondData}
-                    renderItem={this.renderItemSecond}
-                    ItemSeparatorComponent={this.renderSeparatorComponent}
-                    ListHeaderComponent={this.renderHeaderList}
-                    ListFooterComponent={this.renderFooterList}
-                />
+                <View style={{flex: 1, justifyContent: 'flex-start'}}>
+                    <View>
+                        <FlatList
+                            data={firstData}
+                            renderItem={this.renderItem}
+                            ItemSeparatorComponent={this.renderSeparatorComponent}
+                            ListHeaderComponent={this.renderHeaderList}
+                        />
+                    </View>
 
-                <FlatList
-                    data={thirdData}
-                    renderItem={this.renderItemThird}
-                    ItemSeparatorComponent={this.renderSeparatorComponent}
-                    ListHeaderComponent={this.renderHeaderList}
-                    ListFooterComponent={this.renderFooterList}
-                />
+                    <View>
+                        <FlatList
+                            data={secondData}
+                            renderItem={this.renderItemSecond}
+                            ItemSeparatorComponent={this.renderSeparatorComponent}
+                            ListHeaderComponent={this.renderHeaderList}
+                        />
+                    </View>
+                    <View>
+                        <FlatList
+                            data={thirdData}
+                            renderItem={this.renderItemThird}
+                            ItemSeparatorComponent={this.renderSeparatorComponent}
+                            ListHeaderComponent={this.renderHeaderList}
+                        />
+                    </View>
+                </View>
             </View>
         )
     }

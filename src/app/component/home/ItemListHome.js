@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Dimensions, FlatList, ImageBackground, StyleSheet, Text, View} from 'react-native';
+import {Dimensions, FlatList, ImageBackground, StyleSheet, Text, View, TouchableWithoutFeedback} from 'react-native';
 
 const width = Dimensions.get('window').width;
 
@@ -7,6 +7,9 @@ export default class ItemListHome extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            title: ''
+        }
     }
 
     renderFooterListView = () => {
@@ -15,6 +18,12 @@ export default class ItemListHome extends Component {
                 style={{height: 10, backgroundColor: 'gray', width: '100%'}}
             />
         )
+    };
+
+    onPress = () => {
+        this.props.screenProps.rootHome.navigate('ItemDetail', {
+            title: this.state.title
+        });
     };
 
     render() {
@@ -29,8 +38,13 @@ export default class ItemListHome extends Component {
                     data={data}
                     ListFooterComponent={this.renderFooterListView}
                     renderItem={({item}) => {
+                        this.setState({
+                            title: item.name
+                        });
+
                         return (
                             <ItemView
+                                onPress={this.onPress}
                                 imageUrl={item.imageUrl}
                                 sale={item.sale}
                                 name={item.name}
@@ -48,27 +62,29 @@ export default class ItemListHome extends Component {
 class ItemView extends Component {
     render() {
         return (
-            <View style={styles.containerItem}>
-                <ImageBackground style={styles.imgBackground}
-                                 borderRadius={4}
-                                 source={this.props.imageUrl}
-                                 resizeMode={'cover'}>
-                    <View style={{alignItems: 'flex-start'}}>
-                        {this.props.isOnline && <View style={styles.viewOnline}/>}
-                    </View>
-                    <View style={styles.viewSale}>
-                        <Text style={styles.textSale} numberOfLines ={1}>{this.props.sale}</Text>
-                    </View>
-                </ImageBackground>
-                <Text style={styles.textNameShop}
-                      numberOfLines={1}
-                      ellipsizeMode='tail'>
-                    {this.props.name}
-                </Text>
-                <Text style={styles.textNumberAddress} numberOfLines={1}>
-                    {this.props.address}
-                </Text>
-            </View>
+            <TouchableWithoutFeedback onPress={this.props.onPress}>
+                <View style={styles.containerItem}>
+                    <ImageBackground style={styles.imgBackground}
+                                     borderRadius={4}
+                                     source={this.props.imageUrl}
+                                     resizeMode={'cover'}>
+                        <View style={{alignItems: 'flex-start'}}>
+                            {this.props.isOnline && <View style={styles.viewOnline}/>}
+                        </View>
+                        <View style={styles.viewSale}>
+                            <Text style={styles.textSale} numberOfLines={1}>{this.props.sale}</Text>
+                        </View>
+                    </ImageBackground>
+                    <Text style={styles.textNameShop}
+                          numberOfLines={1}
+                          ellipsizeMode='tail'>
+                        {this.props.name}
+                    </Text>
+                    <Text style={styles.textNumberAddress} numberOfLines={1}>
+                        {this.props.address}
+                    </Text>
+                </View>
+            </TouchableWithoutFeedback>
         );
     }
 }

@@ -22,6 +22,7 @@ export default class Home extends Component {
                     return (
                         <View>
                             <ItemListHome
+                                screenProps={{rootHome: this.props.navigation}}
                                 category={item.category}
                                 data={item.data}
                             />

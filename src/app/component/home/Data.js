@@ -248,3 +248,60 @@ export const list = [
 
     },
 ];
+
+export const dataDetails = [
+    {
+        imageUrl: require('../../../res/img/background.png'),
+        name: 'Trà Sữa Gong Cha - Nguyễn Văn Linh, Đà Nẵng',
+        cost: 43,
+        minCost: 20,
+        sale: 'Giảm 30% qua app với đơn hàng trên 50k',
+        promotion: 'Khuyến mãi qua ví AirPay',
+        address: '25-29 Nguyễn Văn Linh, Hải Châu, Đà Nẵng'
+    },
+    {
+        imageUrl: require('../../../res/img/background.png'),
+        name: 'Trà Sữa Gong Cha - Nguyễn Văn Linh, Đà Nẵng',
+        cost: 50,
+        minCost: 24,
+        sale: 'Giảm 30% qua app với đơn hàng trên 50k',
+        promotion: 'Khuyến mãi qua ví AirPay',
+        address: '25-29 Nguyễn Văn Linh, Hải Châu, Đà Nẵng'
+    },
+    {
+        imageUrl: require('../../../res/img/background.png'),
+        name: 'Trà Sữa Gong Cha - Nguyễn Văn Linh, Đà Nẵng',
+        cost: 43,
+        minCost: 20,
+        sale: 'Giảm 30% qua app với đơn hàng trên 50k',
+        promotion: 'Khuyến mãi qua ví AirPay',
+        address: '25-29 Nguyễn Văn Linh, Hải Châu, Đà Nẵng'
+    },
+    {
+        imageUrl: require('../../../res/img/background.png'),
+        name: 'Trà Sữa Gong Cha - Nguyễn Văn Linh, Đà Nẵng',
+        cost: 43,
+        minCost: 20,
+        sale: 'Giảm 30% qua app với đơn hàng trên 50k',
+        promotion: 'Khuyến mãi qua ví AirPay',
+        address: '25-29 Nguyễn Văn Linh, Hải Châu, Đà Nẵng'
+    },
+    {
+        imageUrl: require('../../../res/img/background.png'),
+        name: 'Trà Sữa Gong Cha - Nguyễn Văn Linh, Đà Nẵng',
+        cost: 43,
+        minCost: 20,
+        sale: 'Giảm 30% qua app với đơn hàng trên 50k',
+        promotion: 'Khuyến mãi qua ví AirPay',
+        address: '25-29 Nguyễn Văn Linh, Hải Châu, Đà Nẵng'
+    },
+    {
+        imageUrl: require('../../../res/img/background.png'),
+        name: 'Trà Sữa Gong Cha - Nguyễn Văn Linh, Đà Nẵng',
+        cost: 43,
+        minCost: 20,
+        sale: 'Giảm 30% qua app với đơn hàng trên 50k',
+        promotion: 'Khuyến mãi qua ví AirPay',
+        address: '25-29 Nguyễn Văn Linh, Hải Châu, Đà Nẵng'
+    }
+];

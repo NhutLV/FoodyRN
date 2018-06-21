@@ -46,7 +46,6 @@ export default class Login extends Component {
         }
 
         const user: User = realm.objects(USER_SCHEMA).filtered('Email = $0', this.state.email);
-
         const password = decrypt(user.toString()).toString();
 
         if (this.state.password === password) {
@@ -187,7 +186,7 @@ export default class Login extends Component {
                                         underlineColorAndroid='rgba(0,0,0,0)'
                                         secureTextEntry={true}
                                         numberOfLines={1}
-                                        
+
                                         onChangeText={this.onChangeTextPassword}
                                         value={this.state.password}
                                     />
@@ -217,7 +216,7 @@ export default class Login extends Component {
                             </View>
                         </View>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate('SignUp')}>
-                            <View style={{justifyContent: 'flex-end', alignItems: 'center', marginTop: 40}}>
+                            <View style={{justifyContent: 'flex-end', alignItems: 'center'}}>
                                 <Text style={{color: 'white', fontWeight: 'bold'}}>Đăng ký</Text>
                             </View>
                         </TouchableOpacity>
