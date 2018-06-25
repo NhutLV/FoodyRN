@@ -4,6 +4,8 @@ import {MainNavigator} from './MainNavigator'
 import Login from "../component/login/Login";
 import SignUp from "../component/signup/SignUp";
 import ItemDetail from "../component/home/ItemDetail";
+import ItemScreen from "../component/home/item/ItemScreen";
+import FoodyNews from "../component/home/FoodyNews";
 
 export default StackNavigator({
     SplashScreen: {
@@ -32,6 +34,18 @@ export default StackNavigator({
     },
     ItemDetail: {
         screen: ItemDetail,
+        navigationOptions: {
+            header: null
+        }
+    },
+    ItemScreen: {
+        screen: ItemScreen,
+        navigationOptions: {
+            header: null
+        }
+    },
+    FoodyNews: {
+        screen: FoodyNews,
         navigationOptions: {
             header: null
         }

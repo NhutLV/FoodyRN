@@ -3,7 +3,8 @@ import {
     Text,
     View,
     StyleSheet,
-    ScrollView
+    ScrollView,
+    TouchableWithoutFeedback
 } from 'react-native';
 import {list} from "./Data";
 import ItemListHome from "./ItemListHome";
@@ -18,6 +19,11 @@ export default class Home extends Component {
     render() {
         return (
             <ScrollView style={styles.container}>
+                <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('FoodyNews')}>
+                    <View style={{margin: 20, justifyContent: 'center', alignItems: 'center'}}>
+                        <Text style={{color: 'red', fontSize: 30}}>Foody</Text>
+                    </View>
+                </TouchableWithoutFeedback>
                 {list.map((item) => {
                     return (
                         <View>

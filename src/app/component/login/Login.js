@@ -1,20 +1,10 @@
 import React, {Component} from 'react';
-import {
-    Text,
-    View,
-    StyleSheet,
-    ImageBackground,
-    Image,
-    TouchableOpacity,
-    TextInput,
-    ScrollView,
-    KeyboardAvoidingView
-} from 'react-native';
+import {Image, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import realm from '../../model/RealmConfig'
 import {USER_SCHEMA} from "../../model/User";
-import User from "../../model/User";
 import {decrypt} from "../../util/Crypto";
+import {strings} from "../../../res/string/strings";
 
 export default class Login extends Component {
 
@@ -40,12 +30,21 @@ export default class Login extends Component {
     };
 
 
+    componentWillMount() {
+        const userDao = realm.objects(USER_SCHEMA).filtered('Email = "levietnhutit@gmail.com"');
+
+        userDao.map(item => console.log(item.Email));
+    }
+
     onLogin = () => {
         if (!this.state.password || !this.state.email) {
             return;
         }
 
-        const user: User = realm.objects(USER_SCHEMA).filtered('Email = $0', this.state.email);
+        const user = realm.objects(USER_SCHEMA).filtered('Email = $0', this.state.email);
+
+        alert(user.Email);
+
         const password = decrypt(user.toString()).toString();
 
         if (this.state.password === password) {
@@ -141,7 +140,7 @@ export default class Login extends Component {
                                     />
                                     <TextInput
                                         style={{color: 'white', width: '100%'}}
-                                        placeholder={'Địa chỉ Email của bạn'}
+                                        placeholder={strings.login.email}
                                         placeholderTextColor={'#acacac'}
                                         keyboardType={'email-address'}
                                         underlineColorAndroid='rgba(0,0,0,0)'
@@ -182,7 +181,7 @@ export default class Login extends Component {
 
                                         style={{color: 'white', width: '100%'}}
                                         placeholderTextColor={'#acacac'}
-                                        placeholder={'Mật khẩu của bạn'}
+                                        placeholder={strings.login.password}
                                         underlineColorAndroid='rgba(0,0,0,0)'
                                         secureTextEntry={true}
                                         numberOfLines={1}

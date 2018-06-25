@@ -20,9 +20,9 @@ export default class ItemListHome extends Component {
         )
     };
 
-    onPress = () => {
+    onPress(title) {
         this.props.screenProps.rootHome.navigate('ItemDetail', {
-            title: this.state.title
+            title: title
         });
     };
 
@@ -38,13 +38,9 @@ export default class ItemListHome extends Component {
                     data={data}
                     ListFooterComponent={this.renderFooterListView}
                     renderItem={({item}) => {
-                        this.setState({
-                            title: item.name
-                        });
-
                         return (
                             <ItemView
-                                onPress={this.onPress}
+                                onPress={() => this.onPress(item.name)}
                                 imageUrl={item.imageUrl}
                                 sale={item.sale}
                                 name={item.name}

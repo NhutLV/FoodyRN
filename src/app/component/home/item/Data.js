@@ -1,0 +1,195 @@
+export const data = [
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Ở đâu'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Ăn gì'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Sưu tập địa điểm'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Sưu tập ảnh'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Bình luận'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Blogs'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Video'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Khuyến mãi'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Top thành viên'
+    },
+    {
+        imageUrl: require('../../../../res/img/picture.png'),
+        category: 'Coupon'
+    },
+
+];
+
+export const dataNews = [
+    {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    },
+    {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    },
+    {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: false,
+    },
+    {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: false,
+    }, {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    }, {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    }, {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    }, {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    }, {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    }, {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    }, {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: false,
+    },
+    {
+        rating: 7.6,
+        name: 'Aroi Dessert Cafe',
+        imageUrl: require('../../../../res/img/background.png'),
+        address: '124 Bạch Đằng, Quận Hải Châu, Đà Nẵng',
+        sale: 'Giảm 50% tổng đơn',
+        comment1: 'Bữa giờ là lần thứ 2 mình ship ở aroi thì mình thấy trả uống rất ngon nghiên món trà táo nhà đam, hông thể nào cường lại, that laf tuyet voi',
+        comment2: 'Dến quán mấy lần thấy toàn là hết bánh, h mới có cơ hội thưởng thức bánh gấu ở đây, ngon.',
+        totalComment: '12',
+        totalImage: '1k2',
+        state: 'Đang mở cửa',
+        isOpen: true,
+    },
+];

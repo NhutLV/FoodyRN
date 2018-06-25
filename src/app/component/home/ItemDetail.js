@@ -17,9 +17,14 @@ export default class ItemDetail extends Component {
         super(props);
     }
 
+    onPress() {
+        this.props.navigation.navigate('ItemScreen')
+    };
+
     renderItem = ({item}) => {
         return (
             <ItemDetailView
+                onPress={() => this.onPress()}
                 imageUrl={item.imageUrl}
                 name={item.name}
                 address={item.address}
@@ -74,7 +79,7 @@ export default class ItemDetail extends Component {
 class ItemDetailView extends Component {
     render() {
         return (
-            <TouchableWithoutFeedback>
+            <TouchableWithoutFeedback onPress={this.props.onPress}>
                 <View style={styles.containerItem}>
                     <Image style={styles.image}
                            source={this.props.imageUrl}
